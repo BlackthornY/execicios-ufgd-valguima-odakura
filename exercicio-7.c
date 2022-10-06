@@ -64,16 +64,16 @@ int main()
     printf("Digite um numero qualquer : ");
     scanf("%d",&D);
 
-    // PARA COLOCAR OS NÚMEROS EM ORDEM CRESCENTE
+    // PARA COLOCAR OS NÚMEROS EM ORDEM CRESCENTE.
 
-    if(C > D)
-    {
+    if(C > D || D==C) // Igualar a variável 'D'.
+    {                 // Caso o usuário digite um número igual ao já digitado.
         X = D;
         D = C;
         C = X;
     }
 
-    if(B > C)
+    if(B > C || D==B)
     {
         X = B;
         B = C;
@@ -81,7 +81,7 @@ int main()
     }
 
 
-    if(A > B)
+    if(A > B || D==A)
     {
         X = A;
         A = B;
